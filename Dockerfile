@@ -2,8 +2,8 @@ FROM shcoder/alpine:glibc.supervisor
 
 MAINTAINER shcoder.alex@gmail.com
 
-ENV CONSUL_VERSION=0.7.0 \
-		CONSUL_TEMPLATE_VERSION=0.16.0
+ENV CONSUL_VERSION=1.0.6 \
+		CONSUL_TEMPLATE_VERSION=0.19.4
 
 RUN apk --no-cache add curl unzip jq nmap && \
     curl -fso /tmp/consul.zip https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_amd64.zip && \
